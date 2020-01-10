@@ -53,3 +53,10 @@ then: return Fizz
 given: 73
 when: fizzBuzz
 then: return Fizz
+
+task: 6min
+code: 35min
+
+comment:
+task not complete,
+miss the situation for 73

@@ -11,25 +11,21 @@ public class SecFizzBuzzDemo {
         getReturnForSpecialNumber(number, BUZZ) +
         getReturnForSpecialNumber(number, WHIZZ);
 
-    String fizz = returnFizzIfContainsThree(number);
     if (isContainsSpecialNumber(number, WHIZZ.getNumber())) {
-      return fizz.isEmpty()? returnForSpecialNumbers.replace(BUZZ.getString(), "") : fizz;
+      if (isContainsSpecialNumber(number, FIZZ.getNumber())) {
+        return FIZZ.getString();
+      }
+      return
+          returnForSpecialNumbers.replace(BUZZ.getString(), "") ;
     }
     if (isContainsSpecialNumber(number, BUZZ.getNumber())) {
       return returnForSpecialNumbers.replace(FIZZ.getString(), "");
     }
-    if (!fizz.isEmpty()) {
-      return fizz;
+    if (isContainsSpecialNumber(number, FIZZ.getNumber())) {
+      return FIZZ.getString();
     }
     return returnForSpecialNumbers.isEmpty() ? String.valueOf(number) : returnForSpecialNumbers;
 
-  }
-
-  private String returnFizzIfContainsThree(int number) {
-    if (String.valueOf(number).contains(String.valueOf(FIZZ.getNumber()))) {
-      return FIZZ.getString();
-    }
-    return "";
   }
 
   private boolean isContainsSpecialNumber(int number, int specialNumber) {
