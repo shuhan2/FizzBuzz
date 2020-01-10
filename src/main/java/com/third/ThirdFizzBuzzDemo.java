@@ -1,11 +1,17 @@
 package com.third;
 
+import static com.third.ThirdZz.*;
+
 public class ThirdFizzBuzzDemo {
 
   public String fizzBuzz(int number) {
-    String returnForSpecialNumbers = getReturnForSpecialNumber(number, ThirdZz.FIZZ) +
-        getReturnForSpecialNumber(number, ThirdZz.BUZZ) +
-        getReturnForSpecialNumber(number, ThirdZz.WHIZZ);
+    if (String.valueOf(number).contains("3")) {
+      return FIZZ.getReturnValue();
+    }
+    String returnForSpecialNumbers = getReturnForSpecialNumber(number, FIZZ) +
+        getReturnForSpecialNumber(number, BUZZ) +
+        getReturnForSpecialNumber(number, WHIZZ);
+
     return returnForSpecialNumbers.isEmpty() ? String.valueOf(number) : returnForSpecialNumbers;
   }
 
@@ -15,5 +21,4 @@ public class ThirdFizzBuzzDemo {
     }
     return "";
   }
-
 }
