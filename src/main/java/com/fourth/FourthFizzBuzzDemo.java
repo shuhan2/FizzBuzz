@@ -15,14 +15,21 @@ public class FourthFizzBuzzDemo {
         returnForSpecialZzs =  returnForSpecialZzs + zz.getReturnValue();
       }
     }
+    if (String.valueOf(number).contains("7")) {
+      return getReplacedReturn(number, returnForSpecialZzs, BUZZ);
+    }
     if (String.valueOf(number).contains("5")) {
-      returnForSpecialZzs = returnForSpecialZzs.replace(FIZZ.getReturnValue(), EMPTY_STRING);
-      return returnForSpecialZzs.isEmpty() ? String.valueOf(number) : returnForSpecialZzs;
+      return getReplacedReturn(number, returnForSpecialZzs, FIZZ);
     }
     if (String.valueOf(number).contains("3")) {
       return FIZZ.getReturnValue();
     }
 
+    return returnForSpecialZzs.isEmpty() ? String.valueOf(number) : returnForSpecialZzs;
+  }
+
+  private String getReplacedReturn(int number, String returnForSpecialZzs, FourthZz buzz) {
+    returnForSpecialZzs = returnForSpecialZzs.replace(buzz.getReturnValue(), EMPTY_STRING);
     return returnForSpecialZzs.isEmpty() ? String.valueOf(number) : returnForSpecialZzs;
   }
 
