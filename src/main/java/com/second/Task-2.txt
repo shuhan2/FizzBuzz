@@ -1,0 +1,50 @@
+Practice 2
+design:
+1. enum
+2. returnValueFor3 + returnValueFor5 + returnValueFor7
+
+task
+1.
+given: 1
+when: fizzBuzz
+then: return 1
+
+2.
+given: 6
+when:fizzBuzz
+then: return Fizz
+
+3.
+given: 10
+when: fizzBuzz
+then: return Fizz
+
+4.
+given: 14
+when: fizzBuzz
+then: return Whizz
+
+5.
+given: 60
+when: fizzBuzz
+then: return FizzBuzz
+
+6.
+given: 21
+when: fizzBuzz
+then: return FizzWhizz
+
+7.
+given: 30
+when: fizzBuzz
+then: return Fizz
+
+8.
+given: 35
+when: fizzBuzz
+then: return BuzzWhizz
+
+9.
+given: 75
+when: fizzBuzz
+then: return Fizz

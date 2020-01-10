@@ -1,4 +1,4 @@
-package com;
+package com.first;
 
 public enum ZzType {
   FIZZ(3, "Fizz"),

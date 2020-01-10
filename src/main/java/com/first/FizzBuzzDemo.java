@@ -1,8 +1,8 @@
-package com;
+package com.first;
 
-import static com.ZzType.BUZZ;
-import static com.ZzType.FIZZ;
-import static com.ZzType.WHIZZ;
+import static com.first.ZzType.BUZZ;
+import static com.first.ZzType.FIZZ;
+import static com.first.ZzType.WHIZZ;
 
 public class FizzBuzzDemo {
 
@@ -30,7 +30,6 @@ public class FizzBuzzDemo {
     }
     return "";
   }
-
 
   private boolean isContainsTargetNumber(int originalNumber, int targetNumber) {
     return String.valueOf(originalNumber).contains(String.valueOf(targetNumber));

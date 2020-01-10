@@ -1,5 +1,6 @@
-package com;
+package com.first;
 
+import com.first.FizzBuzzDemo;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
