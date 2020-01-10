@@ -7,7 +7,15 @@ public class FizzBuzzDemo {
   private static final String WHIZZ = "Whizz";
 
   public String fizzBuzz(int number) {
-    if (String.valueOf(number).contains("3")) {
+    if (isContainsTargetNumber(number, 5)) {
+      if (isTheMultipleOfTargetNumber(number, 5)) {
+        if (isTheMultipleOfTargetNumber(number, 7)) {
+          return BUZZ + WHIZZ;
+        }
+        return BUZZ;
+      }
+    }
+    if (isContainsTargetNumber(number, 3)) {
       return FIZZ;
     }
     if (isTheMultipleOfTargetNumber(number, 3)) {
@@ -28,7 +36,11 @@ public class FizzBuzzDemo {
     return String.valueOf(number);
   }
 
-  private boolean isTheMultipleOfTargetNumber(int number, int targetNumber) {
-    return number % targetNumber == 0;
+  private boolean isContainsTargetNumber(int originalNumber, int targetNumber) {
+    return String.valueOf(originalNumber).contains(String.valueOf(targetNumber));
+  }
+
+  private boolean isTheMultipleOfTargetNumber(int originalNumber, int targetNumber) {
+    return originalNumber % targetNumber == 0;
   }
 }
