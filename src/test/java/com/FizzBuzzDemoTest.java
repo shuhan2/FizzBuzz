@@ -53,4 +53,10 @@ public class FizzBuzzDemoTest {
     String actualResult = new FizzBuzzDemo().fizzBuzz(35);
     assertEquals("BuzzWhizz", actualResult);
   }
+
+  @Test
+  void should_return_Fizz_when_fizz_buzz_given_number_is_75() {
+    String actualResult = new FizzBuzzDemo().fizzBuzz(75);
+    assertEquals("Fizz", actualResult);
+  }
 }
