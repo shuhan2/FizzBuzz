@@ -10,15 +10,21 @@ public class ThirdFizzBuzzDemo {
     String returnForSpecialNumbers = getReturnForSpecialNumber(number, FIZZ) +
         getReturnForSpecialNumber(number, BUZZ) +
         getReturnForSpecialNumber(number, WHIZZ);
-    if (String.valueOf(number).contains("5")) {
+    if (isContainsSpecialZzNumber(number, WHIZZ.getNumber())) {
+      return returnForSpecialNumbers.replace(BUZZ.getReturnValue(), EMPTY_STRING);
+    }
+    if (isContainsSpecialZzNumber(number, BUZZ.getNumber())) {
       returnForSpecialNumbers = returnForSpecialNumbers.replace(FIZZ.getReturnValue(), EMPTY_STRING);
       return returnForSpecialNumbers.isEmpty() ? String.valueOf(number) : returnForSpecialNumbers;
     }
-    if (String.valueOf(number).contains("3")) {
+    if (isContainsSpecialZzNumber(number, FIZZ.getNumber())) {
       return FIZZ.getReturnValue();
     }
-
     return returnForSpecialNumbers.isEmpty() ? String.valueOf(number) : returnForSpecialNumbers;
+  }
+
+  private boolean isContainsSpecialZzNumber(int number, int specialNumber) {
+    return String.valueOf(number).contains(String.valueOf(specialNumber));
   }
 
   private String getReturnForSpecialNumber(int number, ThirdZz zz) {
