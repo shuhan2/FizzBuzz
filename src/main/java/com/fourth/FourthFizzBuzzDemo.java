@@ -16,6 +16,9 @@ public class FourthFizzBuzzDemo {
       }
     }
     if (String.valueOf(number).contains("7")) {
+      if (String.valueOf(number).contains("3")) {
+        return FIZZ.getReturnValue();
+      }
       return getReplacedReturn(number, returnForSpecialZzs, BUZZ);
     }
     if (String.valueOf(number).contains("5")) {
