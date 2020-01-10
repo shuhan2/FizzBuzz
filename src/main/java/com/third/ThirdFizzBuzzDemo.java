@@ -10,7 +10,11 @@ public class ThirdFizzBuzzDemo {
     String returnForSpecialNumbers = getReturnForSpecialNumber(number, FIZZ) +
         getReturnForSpecialNumber(number, BUZZ) +
         getReturnForSpecialNumber(number, WHIZZ);
+
     if (isContainsSpecialZzNumber(number, WHIZZ.getNumber())) {
+      if (isContainsSpecialZzNumber(number, FIZZ.getNumber())) {
+        return FIZZ.getReturnValue();
+      }
       return returnForSpecialNumbers.replace(BUZZ.getReturnValue(), EMPTY_STRING);
     }
     if (isContainsSpecialZzNumber(number, BUZZ.getNumber())) {
