@@ -48,4 +48,10 @@ class SecFizzBuzzDemoTest {
     String actualResult = new SecFizzBuzzDemo().fizzBuzz(30);
     assertEquals("Fizz", actualResult);
   }
+
+  @Test
+  void should_return_BuzzWhizz_when_fizzBuzz_givem_35() {
+    String actualResult = new SecFizzBuzzDemo().fizzBuzz(35);
+    assertEquals("BuzzWhizz", actualResult);
+  }
 }
