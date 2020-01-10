@@ -40,9 +40,9 @@ when: fizzBuzz
 then: return 53
 
 11.
-given: 51
+given: 35
 when: fizzBuzz
-then: return 51
+then: return 35
 
 12.
 given: 75

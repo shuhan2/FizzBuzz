@@ -47,4 +47,10 @@ class FourthFizzBuzzDemoTest {
     String actualResult = new FourthFizzBuzzDemo().fizzBuzz(30);
     assertEquals("Fizz", actualResult);
   }
+
+  @Test
+  void should_return_53_when_fizzBuzz_given_53() {
+    String actualResult = new FourthFizzBuzzDemo().fizzBuzz(53);
+    assertEquals("53", actualResult);
+  }
 }
