@@ -1,0 +1,61 @@
+Practice 3
+
+1.
+given: 1
+when: fizzBuzz
+then: 1
+
+2.
+given: 6
+when: fizzBuzz
+then: Fizz
+
+3.
+given: 10
+when: fizzBuzz
+then: Buzz
+
+4.
+given: 14
+when: fizzBuzz
+then: Whizz
+
+5.
+given: 60
+when: fizzBuzz
+then: FizzBuzz
+
+6.
+given: 42
+when: fizzBuzz
+then: FizzWhizz
+
+7.
+given: 35
+when: fizzBuzz
+then: BuzzFizz
+
+8.
+given: 13
+when: fizzBuzz
+then: Fizz
+
+
+given: 30
+when: fizzBuzz
+then: Fizz
+
+9.
+given: 51
+when: fizzBuzz
+then: 51
+
+10.
+given: 75
+when: fizzBuzz
+then: Fizz
+
+11.
+given: 73
+when: fizzBuzz
+then: Fizz
