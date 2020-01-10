@@ -10,6 +10,10 @@ public class SecFizzBuzzDemo {
     String returnForSpecialNumbers = getReturnForSpecialNumber(number, FIZZ) +
         getReturnForSpecialNumber(number, BUZZ) +
         getReturnForSpecialNumber(number, WHIZZ);
+
+    if (isContainsSpecialNumber(number, WHIZZ.getNumber())) {
+      return returnForSpecialNumbers.replace(BUZZ.getString(), "");
+    }
     if (isContainsSpecialNumber(number, BUZZ.getNumber())) {
       return returnForSpecialNumbers.replace(FIZZ.getString(), "");
     }
@@ -29,6 +33,5 @@ public class SecFizzBuzzDemo {
     }
     return "";
   }
-
 
 }
