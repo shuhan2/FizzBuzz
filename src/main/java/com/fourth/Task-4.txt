@@ -1,0 +1,69 @@
+Practice-4
+1.
+given: 1
+when: fizzBuzz
+then:return 1
+
+2.
+given: 6
+when: fizzBuzz
+then: return Fizz
+
+3.
+given: 10
+when: fizzBuzz
+then: return Buzz
+
+4.
+given: 14
+when: fizzBuzz
+then: return Whizz
+
+5.
+given: 60
+when: fizzBuzz
+then: return FizzBuzz
+
+6.
+given: 42
+when: fizzBuzz
+then: return FizzWhizz
+
+7.
+given: 140
+when: fizzBuzz
+then: return BuzzWhizz
+
+8.
+given: 210
+when: fizzBuzz
+then: return FizzBuzzWhizz
+
+9.
+given: 30
+when: fizzBuzz
+then: return Fizz
+
+10.
+given: 53
+when: fizzBuzz
+then: return 53
+
+11.
+given: 51
+when: fizzBuzz
+then: return 51
+
+12.
+given: 75
+when: fizzBuzz
+then: return Fizz
+
+13.
+given: 73
+when: fizzBuzz
+then: return Fizz
+
+
+
+
