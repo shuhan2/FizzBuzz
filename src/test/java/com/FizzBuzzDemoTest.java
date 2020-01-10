@@ -11,4 +11,10 @@ public class FizzBuzzDemoTest {
     String actualResult = new FizzBuzzDemo().fizzBuzz(1);
     assertEquals("1", actualResult);
   }
+
+  @Test
+  void should_return_Fizz_when_fizz_buzz_given_number_is__multiple_of_3() {
+    String actualResult = new FizzBuzzDemo().fizzBuzz(9);
+    assertEquals("Fizz", actualResult);
+  }
 }
