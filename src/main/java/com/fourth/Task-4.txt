@@ -1,8 +1,8 @@
 Practice-4
 1.
-given: 1
+given: 2
 when: fizzBuzz
-then:return 1
+then:return 2
 
 2.
 given: 6
