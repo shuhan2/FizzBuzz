@@ -55,8 +55,15 @@ public class FizzBuzzDemoTest {
   }
 
   @Test
+  void should_return_51_when_fizz_buzz_given_number_is_75() {
+    String actualResult = new FizzBuzzDemo().fizzBuzz(75);
+    assertEquals("Fizz", actualResult);
+  }
+
+  @Test
   void should_return_51_when_fizz_buzz_given_number_is_51() {
     String actualResult = new FizzBuzzDemo().fizzBuzz(51);
     assertEquals("51", actualResult);
   }
+
 }
