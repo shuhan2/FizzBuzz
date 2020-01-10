@@ -8,12 +8,14 @@ public class FizzBuzzDemo {
 
   public String fizzBuzz(int number) {
     if (number % 3 == 0) {
-      if (number % 7 == 0){
+      if (number % 7 == 0) {
         return FIZZ + WHIZZ;
+      }
+      if (number % 5 == 0) {
+        return FIZZ + BUZZ;
       }
       return FIZZ;
     }
-
     if (number % 5 == 0) {
       return BUZZ;
     }

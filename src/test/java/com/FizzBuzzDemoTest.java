@@ -13,26 +13,32 @@ public class FizzBuzzDemoTest {
   }
 
   @Test
-  void should_return_Fizz_when_fizz_buzz_given_number_is__multiple_of_3() {
+  void should_return_Fizz_when_fizz_buzz_given_number_is_9() {
     String actualResult = new FizzBuzzDemo().fizzBuzz(9);
     assertEquals("Fizz", actualResult);
   }
 
   @Test
-  void should_return_Buzz_when_fizz_buzz_given_number_is__multiple_of_5() {
+  void should_return_Buzz_when_fizz_buzz_given_number_is_10() {
     String actualResult = new FizzBuzzDemo().fizzBuzz(10);
     assertEquals("Buzz", actualResult);
   }
 
   @Test
-  void should_return_Whizz_when_fizz_buzz_given_number_is__multiple_of_7() {
+  void should_return_Whizz_when_fizz_buzz_given_number_is_14() {
     String actualResult = new FizzBuzzDemo().fizzBuzz(14);
     assertEquals("Whizz", actualResult);
   }
 
   @Test
-  void should_return_FizzWhizz_when_fizz_buzz_given_number_is__multiple_of_21() {
+  void should_return_FizzWhizz_when_fizz_buzz_given_number_is_21() {
     String actualResult = new FizzBuzzDemo().fizzBuzz(21);
     assertEquals("FizzWhizz", actualResult);
+  }
+
+  @Test
+  void should_return_FizzBuzz_when_fizz_buzz_given_number_is_60() {
+    String actualResult = new FizzBuzzDemo().fizzBuzz(60);
+    assertEquals("FizzBuzz", actualResult);
   }
 }
