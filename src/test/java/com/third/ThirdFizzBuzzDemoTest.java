@@ -35,4 +35,10 @@ class ThirdFizzBuzzDemoTest {
     String actualResult = new ThirdFizzBuzzDemo().fizzBuzz(60);
     assertEquals("FizzBuzz", actualResult);
   }
+
+  @Test
+  void should_return_FizzWhizz_when_fizzBuzz_given_42() {
+    String actualResult = new ThirdFizzBuzzDemo().fizzBuzz(42);
+    assertEquals("FizzWhizz", actualResult);
+  }
 }
