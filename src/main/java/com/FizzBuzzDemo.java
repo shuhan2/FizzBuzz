@@ -11,6 +11,9 @@ public class FizzBuzzDemo {
       return getReturnValueForTargetNumber(number, FIZZ) + getReturnValueForTargetNumber(number, WHIZZ);
     }
     if (isContainsTargetNumber(number, BUZZ.getNumber())) {
+      if (!isTheMultipleOfAnyTargetNumber(number, BUZZ.getNumber(), WHIZZ.getNumber())) {
+        return String.valueOf(number);
+      }
       return getReturnValueForTargetNumber(number, BUZZ) + getReturnValueForTargetNumber(number, WHIZZ);
     }
     if (isContainsTargetNumber(number, FIZZ.getNumber())) {
