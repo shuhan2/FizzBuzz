@@ -15,15 +15,24 @@ public class ThirdFizzBuzzDemo {
       if (isContainsSpecialZzNumber(number, FIZZ.getNumber())) {
         return FIZZ.getReturnValue();
       }
-      return returnForSpecialNumbers.replace(BUZZ.getReturnValue(), EMPTY_STRING);
+      returnForSpecialNumbers = getReplace(returnForSpecialNumbers, BUZZ);
+      return getReturnForOriginalOrSpecial(number, returnForSpecialNumbers);
     }
     if (isContainsSpecialZzNumber(number, BUZZ.getNumber())) {
-      returnForSpecialNumbers = returnForSpecialNumbers.replace(FIZZ.getReturnValue(), EMPTY_STRING);
-      return returnForSpecialNumbers.isEmpty() ? String.valueOf(number) : returnForSpecialNumbers;
+      returnForSpecialNumbers = getReplace(returnForSpecialNumbers, FIZZ);
+      return getReturnForOriginalOrSpecial(number, returnForSpecialNumbers);
     }
     if (isContainsSpecialZzNumber(number, FIZZ.getNumber())) {
       return FIZZ.getReturnValue();
     }
+    return getReturnForOriginalOrSpecial(number, returnForSpecialNumbers);
+  }
+
+  private String getReplace(String returnForSpecialNumbers, ThirdZz fizz) {
+    return returnForSpecialNumbers.replace(fizz.getReturnValue(), EMPTY_STRING);
+  }
+
+  private String getReturnForOriginalOrSpecial(int number, String returnForSpecialNumbers) {
     return returnForSpecialNumbers.isEmpty() ? String.valueOf(number) : returnForSpecialNumbers;
   }
 

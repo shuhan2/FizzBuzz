@@ -59,3 +59,8 @@ then: Fizz
 given: 73
 when: fizzBuzz
 then: Fizz
+
+12.
+given: 74
+when: fizzBuzz
+then: 74
