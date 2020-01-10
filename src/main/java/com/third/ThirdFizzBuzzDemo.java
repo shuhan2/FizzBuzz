@@ -11,7 +11,8 @@ public class ThirdFizzBuzzDemo {
         getReturnForSpecialNumber(number, BUZZ) +
         getReturnForSpecialNumber(number, WHIZZ);
     if (String.valueOf(number).contains("5")) {
-      return returnForSpecialNumbers;
+      returnForSpecialNumbers = returnForSpecialNumbers.replace(FIZZ.getReturnValue(), EMPTY_STRING);
+      return returnForSpecialNumbers.isEmpty() ? String.valueOf(number) : returnForSpecialNumbers;
     }
     if (String.valueOf(number).contains("3")) {
       return FIZZ.getReturnValue();
