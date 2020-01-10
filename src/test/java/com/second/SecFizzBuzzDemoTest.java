@@ -11,4 +11,11 @@ class SecFizzBuzzDemoTest {
     String actualResult = new SecFizzBuzzDemo().fizzBuzz(1);
     assertEquals("1", actualResult);
   }
+
+  @Test
+  void should_return_Fizz_when_fizzbuzz_given_6() {
+    String actualResult = new SecFizzBuzzDemo().fizzBuzz(6);
+    assertEquals("Fizz", actualResult);
+
+  }
 }
