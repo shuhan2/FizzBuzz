@@ -23,4 +23,10 @@ public class FizzBuzzDemoTest {
     String actualResult = new FizzBuzzDemo().fizzBuzz(10);
     assertEquals("Buzz", actualResult);
   }
+
+  @Test
+  void should_return_Whizz_when_fizz_buzz_given_number_is__multiple_of_7() {
+    String actualResult = new FizzBuzzDemo().fizzBuzz(14);
+    assertEquals("Whizz", actualResult);
+  }
 }
