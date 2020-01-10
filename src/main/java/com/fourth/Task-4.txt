@@ -29,16 +29,6 @@ given: 42
 when: fizzBuzz
 then: return FizzWhizz
 
-7.
-given: 140
-when: fizzBuzz
-then: return BuzzWhizz
-
-8.
-given: 210
-when: fizzBuzz
-then: return FizzBuzzWhizz
-
 9.
 given: 30
 when: fizzBuzz

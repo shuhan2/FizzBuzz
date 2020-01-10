@@ -7,6 +7,9 @@ import static com.fourth.FourthZz.WHIZZ;
 public class FourthFizzBuzzDemo {
 
   public String fizzBuzz(int number) {
+    if (String.valueOf(number).contains("3")) {
+      return FIZZ.getReturnValue();
+    }
     String returnForSpecialZzs = "";
     for (FourthZz zz: new FourthZz[]{FIZZ, BUZZ, WHIZZ}) {
       if (number % zz.getNumber() == 0) {
