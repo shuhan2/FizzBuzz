@@ -10,6 +10,9 @@ public class FifthTransformer {
     String returnForSpecialNumbers = getReturnForSpecialZz(number, FIZZ) +
         getReturnForSpecialZz(number, BUZZ) +
         getReturnForSpecialZz(number, WHIZZ);
+    if (String.valueOf(number).contains("7")) {
+      return returnForSpecialNumbers.replace("Buzz", EMPTY_STRING);
+    }
     if (String.valueOf(number).contains("5")) {
       returnForSpecialNumbers = returnForSpecialNumbers.replace("Fizz", EMPTY_STRING);
       return returnForSpecialNumbers.isEmpty() ? String.valueOf(number) : returnForSpecialNumbers;
