@@ -48,3 +48,5 @@ then: return Fizz
 given: 73
 when: fizzBuzz
 then: return Fizz
+
+code: 25min
