@@ -10,18 +10,26 @@ public class FifthTransformer {
     String returnForSpecialNumbers = getReturnForSpecialZz(number, FIZZ) +
         getReturnForSpecialZz(number, BUZZ) +
         getReturnForSpecialZz(number, WHIZZ);
-    if (String.valueOf(number).contains("7")) {
-      return returnForSpecialNumbers.replace("Buzz", EMPTY_STRING);
+
+    if (isContainsSpecialZzNumber(number, WHIZZ.getNumber())) {
+      if (isContainsSpecialZzNumber(number, FIZZ.getNumber())) {
+        return FIZZ.getReturnValue();
+      }
+      return returnForSpecialNumbers.replace(BUZZ.getReturnValue(), EMPTY_STRING);
     }
-    if (String.valueOf(number).contains("5")) {
-      returnForSpecialNumbers = returnForSpecialNumbers.replace("Fizz", EMPTY_STRING);
+    if (isContainsSpecialZzNumber(number, BUZZ.getNumber())) {
+      returnForSpecialNumbers = returnForSpecialNumbers.replace(FIZZ.getReturnValue(), EMPTY_STRING);
       return returnForSpecialNumbers.isEmpty() ? String.valueOf(number) : returnForSpecialNumbers;
     }
-    if (String.valueOf(number).contains("3")) {
-      return "Fizz";
+    if (isContainsSpecialZzNumber(number, FIZZ.getNumber())) {
+      return FIZZ.getReturnValue();
     }
 
     return returnForSpecialNumbers.isEmpty() ? String.valueOf(number) : returnForSpecialNumbers;
+  }
+
+  private boolean isContainsSpecialZzNumber(int number, int zzNumber) {
+    return String.valueOf(number).contains(String.valueOf(zzNumber));
   }
 
   private String getReturnForSpecialZz(int number, FifthZz zz) {

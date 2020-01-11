@@ -17,7 +17,8 @@ class FifthTransformerTest {
       "'Fizz', 30",
       "'BuzzWhizz', 35",
       "'51', 51",
-      "'Fizz', 75"
+      "'Fizz', 75",
+      "'Fizz', 73"
   })
   void should_return_expected_when_fizzBuzz_given_input_number(String output, int input) {
     String actualResult = new FifthTransformer().fizzBuzz(input);
