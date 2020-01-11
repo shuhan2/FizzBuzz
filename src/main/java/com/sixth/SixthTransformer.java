@@ -3,15 +3,10 @@ package com.sixth;
 public class SixthTransformer {
 
   public String fizzBuzz(int number) {
-    if (number % 3 == 0) {
-      return "Fizz";
-    }
-    if (number % 5 == 0) {
-      return "Buzz";
-    }
-    if (number % 7 == 0) {
-      return "Whizz";
-    }
-    return String.valueOf(number);
+    String returnForDefaultRules = SixthZz.FIZZ.parse(number) +
+        SixthZz.BUZZ.parse(number) +
+        SixthZz.WHIZZ.parse(number);
+
+    return returnForDefaultRules.isEmpty() ? String.valueOf(number) : returnForDefaultRules;
   }
 }
