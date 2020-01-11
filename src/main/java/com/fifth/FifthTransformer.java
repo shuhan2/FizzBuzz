@@ -1,17 +1,21 @@
 package com.fifth;
 
+import static com.fifth.FifthZz.*;
+
 public class FifthTransformer {
 
   public String fizzBuzz(int number) {
-    if (number % 3 == 0) {
-      return "Fizz";
+    String returnForSpecialNumbers = getReturnForSpecialZz(number, FIZZ) +
+        getReturnForSpecialZz(number, BUZZ) +
+        getReturnForSpecialZz(number, WHIZZ);
+
+    return returnForSpecialNumbers.isEmpty() ? String.valueOf(number) : returnForSpecialNumbers;
+  }
+
+  private String getReturnForSpecialZz(int number, FifthZz zz) {
+    if (number % zz.getNumber() == 0) {
+      return zz.getReturnValue();
     }
-    if (number % 5 == 0) {
-      return "Buzz";
-    }
-    if (number % 7 == 0) {
-      return "Whizz";
-    }
-    return String.valueOf(number);
+    return "";
   }
 }
