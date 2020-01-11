@@ -15,16 +15,21 @@ public class FifthTransformer {
       if (isContainsSpecialZzNumber(number, FIZZ.getNumber())) {
         return FIZZ.getReturnValue();
       }
-      return returnForSpecialNumbers.replace(BUZZ.getReturnValue(), EMPTY_STRING);
+      returnForSpecialNumbers = returnForSpecialNumbers.replace(BUZZ.getReturnValue(), EMPTY_STRING);
+      return getReturnForSpecialOrOriginal(number, returnForSpecialNumbers);
     }
     if (isContainsSpecialZzNumber(number, BUZZ.getNumber())) {
       returnForSpecialNumbers = returnForSpecialNumbers.replace(FIZZ.getReturnValue(), EMPTY_STRING);
-      return returnForSpecialNumbers.isEmpty() ? String.valueOf(number) : returnForSpecialNumbers;
+      return getReturnForSpecialOrOriginal(number, returnForSpecialNumbers);
     }
     if (isContainsSpecialZzNumber(number, FIZZ.getNumber())) {
       return FIZZ.getReturnValue();
     }
 
+    return getReturnForSpecialOrOriginal(number, returnForSpecialNumbers);
+  }
+
+  private String getReturnForSpecialOrOriginal(int number, String returnForSpecialNumbers) {
     return returnForSpecialNumbers.isEmpty() ? String.valueOf(number) : returnForSpecialNumbers;
   }
 
