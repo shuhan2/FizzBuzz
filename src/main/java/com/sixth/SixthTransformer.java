@@ -1,19 +1,17 @@
 package com.sixth;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class SixthTransformer {
+  List<Rule> rules = Arrays.asList(new ContainsFiveRule(),
+                                   new ContainsThreeNotFiveRule(),
+                                   new DefaultRule());
 
   public String fizzBuzz(int number) {
-    String returnForDefaultRules = SixthZz.FIZZ.parse(number) +
-        SixthZz.BUZZ.parse(number) +
-        SixthZz.WHIZZ.parse(number);
-
-    if (String.valueOf(number).contains("5")) {
-      return returnForDefaultRules;
-    }
-    if (String.valueOf(number).contains("3")) {
-      return "Fizz";
-    }
-
-    return returnForDefaultRules.isEmpty() ? String.valueOf(number) : returnForDefaultRules;
+    return rules.stream()
+        .filter(rule -> rule.isMatchRule(number))
+        .findFirst().orElse(new DefaultRule())
+        .getReturnForRules(number);
   }
 }
