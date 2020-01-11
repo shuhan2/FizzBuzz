@@ -16,7 +16,8 @@ class SixthTransformerTest {
       "'Fizz', 30, 'should return Fizz when fizzBuzz given contains3not5 rule'",
       "'BuzzWhizz', 35, 'should return returnForDefaultRules when fizzBuzz given contains5and3 rule'",
       "'51', 51, 'should ignore the rule for multiple 3 when fizzBuzz given contains5 rule'",
-      "'Fizz', 75, 'should ignore the rule for contains5 when fizzBuzz given contains7and5 rule'"
+      "'Fizz', 75, 'should ignore the rule for contains5 when fizzBuzz given contains7and5 rule'",
+      "'Fizz', 73, 'should return Fizz when fizzBuzz given contains7and3 rule'"
   })
   void should_return_expected_when_fizzBuzz_given_input_number(String output, int input) {
     String actualResult = new SixthTransformer().fizzBuzz(input);
