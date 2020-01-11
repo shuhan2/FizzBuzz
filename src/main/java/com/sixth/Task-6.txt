@@ -1,0 +1,58 @@
+Task-6
+design:
+rule interface
+put logic about  % == 0 into zz enum
+
+1.
+given: 1
+when: fizzBuzz
+then: 1
+
+2.
+given: 12
+when: fizzBuzz
+then: Fizz
+
+3.
+given: 20
+when: fizzBuzz
+then: Buzz
+
+4.
+given: 28
+when: fizzBuzz
+then: Whizz
+
+5.
+given: 210
+when: fizzBuzz
+then: FizzBuzzWhizz
+
+6.
+given: 30
+when: fizzBuzz
+then: Fizz
+
+7.
+given: 35
+when: fizzBuzz
+then: BuzzWhizz
+
+8.
+given: 51
+when: fizzBuzz
+then: 51
+
+9.
+given: 75
+when: fizzBuzz
+then: Fizz
+
+10.
+given: 73
+when: fizzBuzz
+then: Fizz
+
+
+
+
