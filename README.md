@@ -25,4 +25,4 @@ Fizz
 Wihzz
 Buzz
 … 
-一直到120 
+一直到n 

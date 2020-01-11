@@ -1,61 +1,50 @@
-Practice-4
+Task-5
 1.
-given: 2
+given: 1
 when: fizzBuzz
-then:return 2
+then: return 1
 
 2.
-given: 6
+given: 12
 when: fizzBuzz
 then: return Fizz
 
 3.
-given: 10
+given: 20
 when: fizzBuzz
 then: return Buzz
 
 4.
-given: 14
+given: 28
 when: fizzBuzz
 then: return Whizz
 
 5.
-given: 60
+given: 210
 when: fizzBuzz
-then: return FizzBuzz
+then: return FizzBuzzWhizz
 
 6.
-given: 42
-when: fizzBuzz
-then: return FizzWhizz
-
-9.
 given: 30
 when: fizzBuzz
 then: return Fizz
 
-10.
-given: 53
-when: fizzBuzz
-then: return 53
-
-11.
+7.
 given: 35
 when: fizzBuzz
 then: return BuzzWhizz
 
-12.
+8.
+given: 51
+when: fizzBuzz
+then: return 51
+
+9.
 given: 75
 when: fizzBuzz
 then: return Fizz
 
-13.
+10.
 given: 73
 when: fizzBuzz
 then: return Fizz
-
-code: 40min
-
-
-
-
