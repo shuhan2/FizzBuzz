@@ -9,7 +9,6 @@ import static com.seventh.SeventhZz.WHIZZ;
 
 public class DefaultRule implements Rule {
 
-
   @Override
   public boolean isMatchRule(int number) {
     List<Rule> rules = Arrays.asList(new Multiple3Rule(),
