@@ -1,10 +1,10 @@
 package com.sixth;
 
-public class ContainsThreeNotFiveRule implements Rule {
+public class ContainsThreeRule implements Rule {
 
   @Override
   public boolean isMatchRule(int number) {
-    return String.valueOf(number).contains("3") && !String.valueOf(number).contains("5");
+    return String.valueOf(number).contains("3");
   }
 
   @Override

@@ -7,8 +7,8 @@ public class SixthTransformer {
 
   private List<Rule> rules = Arrays.asList(
       new ContainsSevenRule(),
-      new ContainsFiveNotSevenRule(),
-      new ContainsThreeNotFiveRule()
+      new ContainsFiveRule(),
+      new ContainsThreeRule()
   );
 
   public String fizzBuzz(int number) {
