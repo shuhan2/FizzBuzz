@@ -1,0 +1,50 @@
+Task - 7
+1.
+given: 2
+when: fizzBuzz
+then: 2
+
+2.
+given: 12
+when: fizzBuzz
+then: Fizz
+
+3.
+given: 20
+when: fizzBuzz
+then: Buzz
+
+4.
+given: 28
+when: fizzBuzz
+then: Whizz
+
+5.
+given: 210
+when: fizzBuzz
+then: FizzBuzzWhizz
+
+6.
+given: 30
+when: fizzBuzz
+then: Fizz
+
+7.
+given: 35
+when: fizzBuzz
+then: BuzzWhizz
+
+8.
+given: 51
+when: fizzBuzz
+then: Fizz
+
+9.
+given: 75
+when: fizzBuzz
+then: Fizz
+
+10.
+given: 37
+when: fizzBuzz
+then: Fizz
