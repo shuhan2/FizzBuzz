@@ -13,6 +13,7 @@ class SeventhTransformerTest {
       "'Fizz', 12, 'should return Fizz when fizzBuzz given only multiple 3'",
       "'Buzz', 20, 'should return Buzz when fizzBuzz given only multiple 5'",
       "'Whizz', 28, 'should return Whizz when fizzBuzz given only multiple 7'",
+      "'FizzBuzzWhizz', 210, 'should return FizzBuzzWhizz when fizzBuzz given only multiple 3, 5, 7'",
   })
   void should_return_expect_value_when_fizzBuzz_given_input_number(String output, int input) {
     String actualResult = new SeventhTransformer().fizzBuzz(input);
