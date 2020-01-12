@@ -2,7 +2,7 @@ package com.seventh;
 
 import static com.seventh.SeventhZz.*;
 
-public class ContainsThreeRule implements Rule {
+public class ContainsThreeNotFiveRule implements Rule {
 
   @Override
   public boolean isMatchRule(int number) {
