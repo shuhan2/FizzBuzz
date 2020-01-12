@@ -8,10 +8,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class SeventhTransformerTest {
 
   @ParameterizedTest
-  @CsvSource("'2'， 2，'should return original string value when fizzBuzz given no special number'")
-  void should_return_expect_value_when_fizzBuzz_given_input_number() {
-    String actualResult = new SeventhTransformer().fizzBuzz(1);
-    assertEquals("1", actualResult);
+  @CsvSource({
+      "'2', 2, 'should return original string value when fizzBuzz given no special number'",
+      "'Fizz', 12, 'should return Fizz when fizzBuzz given only multiple 3'"})
+  void should_return_expect_value_when_fizzBuzz_given_input_number(String output, int input) {
+    String actualResult = new SeventhTransformer().fizzBuzz(input);
+    assertEquals(output, actualResult);
 
   }
 }
