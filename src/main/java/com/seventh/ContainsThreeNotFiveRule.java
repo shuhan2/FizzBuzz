@@ -1,7 +1,5 @@
 package com.seventh;
 
-import static com.seventh.SeventhZz.*;
-
 public class ContainsThreeNotFiveRule implements Rule {
 
   @Override
@@ -11,6 +9,6 @@ public class ContainsThreeNotFiveRule implements Rule {
 
   @Override
   public String getReturnForRule(int number) {
-    return FIZZ.parse(number);
+    return "Fizz";
   }
 }

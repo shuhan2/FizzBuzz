@@ -17,6 +17,7 @@ class SeventhTransformerTest {
       "'Fizz', 30, 'should return Fizz when fizzBuzz given only contains 3'",
       "'51', 51, 'should ignore the rule about three when fizzBuzz given only contains 5'",
       "'Fizz', 75, 'should ignore the rule about five when fizzBuzz given contains 7'",
+      "'Fizz', 73, 'should keep rule about three when fizzBuzz given contains 7'",
   })
   void should_return_expect_value_when_fizzBuzz_given_input_number(String output, int input) {
     String actualResult = new SeventhTransformer().fizzBuzz(input);

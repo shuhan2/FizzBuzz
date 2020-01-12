@@ -13,6 +13,9 @@ public class ContainsSevenRule implements Rule {
 
   @Override
   public String getReturnForRule(int number) {
+    if (new ContainsThreeNotFiveRule().isMatchRule(number)) {
+      return new ContainsThreeNotFiveRule().getReturnForRule(number);
+    }
     String returnForRules = FIZZ.parse(number) + WHIZZ.parse(number);
     return returnForRules.isEmpty() ? String.valueOf(number) : returnForRules;
   }
